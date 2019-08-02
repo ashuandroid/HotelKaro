@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hotelkaro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Nearby"></activity>
+        <activity android:name=".Activity.Coupon" />
+        <activity android:name=".Activity.Fillter" />
+        <activity android:name=".Activity.BookingDetails" />
+        <activity android:name=".Activity.ReviewBooking" />
+        <activity android:name=".Activity.ReviewActivity" />
+        <activity android:name=".Activity.Payment" />
+        <activity android:name=".Activity.BookingSuccess" />
+        <activity android:name=".Activity.MyTrip" />
+        <activity android:name=".Activity.RoomList" />
+        <activity android:name=".Activity.DestinationActivity" />
+        <activity android:name=".Activity.HotelMap" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.HotelList" />
+        <activity android:name=".Activity.OtpVerification" />
+        <activity android:name=".Activity.MobileNumberActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCHeAJBmKB96xYiYubA2fAIeIgk6VlMVQA" />
+    </application>
+
+</manifest>

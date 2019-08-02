@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyTrip">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Cardview Can be used-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="@dimen/_2sdp"
+                android:id="@+id/card_toolbar"
+                app:cardCornerRadius="0dp"
+                app:cardUseCompatPadding="false"
+                app:cardBackgroundColor="@color/color_white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+
+                    <ImageView
+                        android:id="@+id/back_arrow"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_13sdp"
+                        android:src="@drawable/back_24dp"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_toEndOf="@+id/back_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_black"
+                        android:text="My Trips"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="@dimen/_12sdp"/>
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/cross_24dp"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <!--MyTrip Tablayout-->
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_white"
+                app:tabIndicatorColor="@color/color_blue"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/color_black"
+                app:tabTextAppearance="@style/MyMenuTextAppearance1"
+                app:tabTextColor="@color/color_gray_dark" />
+
+
+            <!--Viewpager used-->
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/color_white">
+
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+

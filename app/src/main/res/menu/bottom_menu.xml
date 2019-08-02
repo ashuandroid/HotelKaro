@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/search_menu"
+        android:enabled="true"
+        android:icon="@drawable/search_24dp"
+        android:title="Search" />
+
+
+    <item
+        android:id="@+id/fav_menu"
+        android:enabled="true"
+        android:icon="@drawable/faverate_24dp"
+        android:title="Favourite" />
+
+
+    <item
+        android:id="@+id/profile_menu"
+        android:enabled="true"
+        android:icon="@drawable/profile_24dp"
+        android:title="Profile" />
+
+
+    <item
+        android:id="@+id/setting_menu"
+        android:enabled="true"
+        android:icon="@drawable/settings_24dp"
+        android:title="Settings" />
+
+
+</menu>

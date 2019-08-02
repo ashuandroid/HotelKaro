@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_item_coupon"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get 10% Off"
+                android:fontFamily="@font/proximanova_regular"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_12sdp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I will show how to create vertical and horizontal lines in android using android XML"
+                android:fontFamily="@font/proximanova_regular"
+                android:textColor="@color/color_gray_dark"
+                android:textSize="@dimen/_10sdp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:text="Apply"
+            android:textColor="@color/color_gray_dark"
+            android:textAllCaps="false"
+            android:fontFamily="@font/proximanova_regular"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:background="@drawable/button_shap"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@color/color_gray_light"
+        android:layout_below="@+id/ll_item_coupon"/>
+
+
+
+</RelativeLayout>

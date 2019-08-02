@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RoomList">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/back_24dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/back_arrow"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textColor="@color/color_black"
+                        android:text="Select Room"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanova_regular"
+
+                        android:text="Hotel Sunrise | 01 Jun - 10 Jun | 2 Guest"
+                        android:textColor="@color/color_gray_dark"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_gray_light"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_8sdp"
+                android:textColor="@color/color_blue"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/proximanova_regular"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Book 2 night and get 25% on each nights"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/card_top">
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_1"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:src="@drawable/hotel3"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:scaleType="centerCrop"/>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Classic Room"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:textColor="@color/color_gray_dark"
+                            android:text="Child"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:textColor="@color/color_gray_dark"
+                            android:text="Free Break Fast, Wifi, pool"/>
+
+                        <TextView
+                            android:id="@+id/refund"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="#f32e2e"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="Cancellation is Refundable"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/color_blue"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color_black"
+                                    android:fontFamily="@font/proximanova_regular"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:text="$149"/>
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$199"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:fontFamily="@font/proximanova_regular"
+                                    android:textColor="@color/color_gray_dark"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25% Off"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:fontFamily="@font/proximanova_regular"
+                                    android:textColor="#fc5732"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Per Night"
+                                android:fontFamily="@font/proximanova_regular"
+                                android:textSize="@dimen/_8sdp"
+                                android:textColor="#8f948d"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f32e2e"
+                        android:text="Few Left!"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:textSize="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:id="@+id/book1"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Book"
+                        android:textColor="@color/color_white"
+                        android:background="@drawable/gradient_bg"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_2"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:src="@drawable/hotel2"
+                        android:layout_width="85.3dp"
+                        android:layout_height="85.3dp"
+                        android:scaleType="centerCrop"/>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Classic Room"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:textColor="@color/color_gray_dark"
+                            android:text="Child"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_gray_dark"
+                            android:text="Free Break Fast, Wifi, pool"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:textColor="#f32e2e"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="Cancellation is Refundable"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/recommand"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:textColor="@color/color_blue"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color_black"
+                                    android:fontFamily="@font/proximanova_regular"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:text="$149"/>
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/proximanova_regular"
+                                    android:text="$199"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/color_gray_dark"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25% Off"
+                                    android:fontFamily="@font/proximanova_regular"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="#fc5732"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Per Night"
+                                android:fontFamily="@font/proximanova_regular"
+                                android:textSize="@dimen/_8sdp"
+                                android:textColor="#8f948d"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/few"
+                        android:visibility="visible"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f32e2e"
+                        android:text="Few Left!"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:textSize="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:id="@+id/book2"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Book"
+                        android:textColor="@color/color_white"
+                        android:background="@drawable/gradient_bg"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_3"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:src="@drawable/hotel1"
+                        android:layout_width="85.3dp"
+                        android:layout_height="85.3dp"
+                        android:scaleType="centerCrop"/>
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Classic Room"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_gray_dark"
+                            android:text="Child"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_gray_dark"
+                            android:text="Free Break Fast, Wifi, pool"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="#f32e2e"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="Cancellation is Refundable"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended"
+                        android:textSize="10sp"
+                        android:textColor="@color/color_blue"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color_black"
+                                    android:textSize="@dimen/_15sdp"
+                                    android:text="$149"/>
+
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$199"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/color_gray_dark"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="25% Off"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="#fc5732"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_3sdp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Per Night"
+                                android:textSize="@dimen/_8sdp"
+                                android:textColor="#8f948d"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f32e2e"
+                        android:text="Few Left!"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:textSize="@dimen/_8sdp"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Book"
+                        android:id="@+id/book3"
+                        android:textColor="@color/color_white"
+                        android:background="@drawable/gradient_bg"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
